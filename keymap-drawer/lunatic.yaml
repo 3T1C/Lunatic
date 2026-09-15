@@ -2,18 +2,6 @@ layout: {zmk_keyboard: lunatic}
 layers:
   Main:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
-  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -24,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '[', s: '{'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -43,37 +31,23 @@ layers:
   - C
   - V
   - B
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
+  - Num
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - mouse
   - RGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
   Num:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
-  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -84,8 +58,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '[', s: '{'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -103,37 +77,23 @@ layers:
   - C
   - V
   - B
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
+  - {t: Num, type: held}
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - mouse
   - RGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
   mouse:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
-  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -144,8 +104,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '[', s: '{'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -163,37 +123,23 @@ layers:
   - C
   - V
   - B
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
+  - {t: Num, type: held alternate}
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: mouse, type: held}
   - RGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
   '3':
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
-  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -204,8 +150,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '[', s: '{'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -223,37 +169,23 @@ layers:
   - C
   - V
   - B
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
+  - Num
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - mouse
   - RGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
   '4':
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
-  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -264,8 +196,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '[', s: '{'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -283,20 +215,18 @@ layers:
   - C
   - V
   - B
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
+  - Num
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - mouse
   - RGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
