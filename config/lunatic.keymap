@@ -63,7 +63,7 @@
 &mt RSHFT RET         &kp LCTRL  &kp LALT  &mo 1  &kp SPACE  &kp BSPC  &mo 2  &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
+            //sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
         };
 
         Num {
@@ -75,7 +75,7 @@
 &mt RSHFT RET         &kp LCTRL  &kp LALT  &mo 1  &kp SPACE  &kp BSPC  &mo 2  &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&none>, <&none>;
+            //sensor-bindings = <&none>, <&none>;
         };
 
         Mouse {
@@ -87,7 +87,7 @@
 &mt RSHFT RET         &kp LCTRL  &kp LALT  &mo 1  &kp SPACE  &kp BSPC  &mo 2  &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
+            //sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
         };
 
         Opt1 {
@@ -98,7 +98,7 @@
 &mt RSHFT RET         &kp LCTRL  &kp LALT  &mo 1  &kp SPACE  &kp BSPC  &mo 2  &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
+            //sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
         };
 
         Opt2 {
@@ -109,7 +109,7 @@
 &mt RSHFT RET         &kp LCTRL  &kp LALT  &mo 1  &kp SPACE  &kp BSPC  &mo 2  &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
+            //sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
         };
     };
 };
