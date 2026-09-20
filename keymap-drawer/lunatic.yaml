@@ -52,8 +52,8 @@ layers:
   - '~'
   - +
   - {t: '=', s: +}
-  - {t: Ctl+Sft+T, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: Sft+Alt+Y, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: 'Ctl+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: 'Sft+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - <
   - '>'
   - (
