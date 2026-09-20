@@ -90,6 +90,12 @@
             key-positions = <29 17>;
             layers = <2>;
         };
+
+        esc-jk {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
     };
 
     macros {
