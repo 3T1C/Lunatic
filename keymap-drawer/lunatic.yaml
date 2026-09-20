@@ -433,3 +433,6 @@ combos:
 - p: [29, 17]
   k: '&mkp MB3'
   l: [layer_2]
+- p: [19, 20]
+  k: $$mdi:keyboard-esc$$
+  l: [Main]
