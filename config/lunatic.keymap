@@ -64,7 +64,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&caps_word>;
         };
-    };
+
 
 / {
     combos {
