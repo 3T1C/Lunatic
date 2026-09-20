@@ -3,8 +3,8 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 // scroll
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
@@ -120,38 +120,73 @@
             label = "M0";
         };
 
-        m1: m1 { // Ctrl+Shift+Esc - Task Manager
+        m1: m1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL &kp LSHFT>, <&macro_tap &kp ESC>, <&macro_release &kp LCTRL &kp LSHFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHFT>,
+                <&macro_tap>,
+                <&kp ESC>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHFT>;
+
             label = "M1";
         };
 
-        m2: m2 { // Cmd(right)+Ctrl+Left - Switch to previous desktop
+        m2: m2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RGUI &kp LCTRL>, <&macro_tap &kp LEFT>, <&macro_release &kp RGUI &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp RGUI &kp LCTRL>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp RGUI &kp LCTRL>;
+
             label = "M2";
         };
 
-        m3: m3 { // Cmd(right)+Ctrl+Right - Switch to next desktop
+        m3: m3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RGUI &kp LCTRL>, <&macro_tap &kp RIGHT>, <&macro_release &kp RGUI &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp RGUI &kp LCTRL>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp RGUI &kp LCTRL>;
+
             label = "M3";
         };
 
-        m4: m4 { // Cmd(right)+Ctrl+D
+        m4: m4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RGUI &kp LCTRL>, <&macro_tap &kp D>, <&macro_release &kp RGUI &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp RGUI &kp LCTRL>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp RGUI &kp LCTRL>;
+
             label = "M4";
         };
 
-        m5: m5 { // cmd(right)+ctrl+f4
+        m5: m5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RGUI &kp LCTRL>, <&macro_tap &kp F4>, <&macro_release &kp RGUI &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp RGUI &kp LCTRL>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp RGUI &kp LCTRL>;
+
             label = "M5";
         };
     };
@@ -162,10 +197,10 @@
         Main {
             display-name = "Main";
             bindings = <
-&kp TAB        &kp Q    &kp W         &kp E      &kp R  &kp T           &kp Y          &kp U      &kp I      &kp O         &kp P      &to 4
-&kp BACKSPACE  &kp A    &kp S         &kp D      &kp F  &kp G           &kp H          &kp J      &kp K      &kp L         &kp SEMI   &kp ENTER
-&sk LSHFT      &lt 7 Z  &kp X         &kp C      &kp V  &kp B           &kp N          &kp M      &kp COMMA  &kp PERIOD    &kp RCTRL  &sk RSHIFT
-&mt RSHFT RET           &kp LEFT_ALT  &kp LCTRL  &mo 1  &kp LEFT_SHIFT  &kp RIGHT_GUI  &kp SPACE  &mo 2      &kp LEFT_ALT
+&kp TAB        &kp Q    &kp W         &kp E      &kp R  &kp T  &kp Y          &kp U      &kp I      &kp O         &kp P      &to 4
+&kp BACKSPACE  &kp A    &kp S         &kp D      &kp F  &kp G  &kp H          &kp J      &kp K      &kp L         &kp SEMI   &kp ENTER
+&sk LSHFT      &lt 7 Z  &kp X         &kp C      &kp V  &kp B  &kp N          &kp M      &kp COMMA  &kp PERIOD    &kp RCTRL  &sk RSHIFT
+&mt RSHFT RET           &kp LEFT_ALT  &kp LCTRL  &mo 1  &td0   &kp RIGHT_GUI  &kp SPACE  &mo 2      &kp LEFT_ALT
             >;
 
             //sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
@@ -176,7 +211,7 @@
         layer_1 {
             display-name = "layer_1";
             bindings = <
-&kp ESC        &kp GRAVE        &kp TILDE     &kp PLUS       &kp EQUAL     &sk LC(LSHFT)     &sk LS(LALT)      &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_GUI
+&kp ESC        &kp GRAVE        &kp TILDE     &kp PLUS       &kp EQUAL     &sk LC(LSHFT)     &sk LS(LALT)       &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_GUI
 &kp BACKSPACE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS       &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ENTER
 &kp LSHFT      &kp PERCENT      &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp QUESTION      &kp COLON          &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp PIPE              &kp SLASH              &kp NON_US_BACKSLASH
 &mt RSHFT RET                   &kp LEFT_ALT  &kp LCTRL      &trans        &kp LCTRL         &kp RCTRL          &kp SPACE       &trans             &kp RCTRL
@@ -188,10 +223,10 @@
         layer_2 {
             display-name = "layer_2";
             bindings = <
-&kp TAB        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_1  &kp J     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &to 8          &m1
-&trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mkp MB2  &kp LEFT        &kp DOWN        &kp UP_ARROW    &kp RIGHT        &kp RIGHT_GUI  &kp ENTER
-&trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp M         &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans         &mkp MB1
-&mt RSHFT RET                &kp LEFT_ALT  &kp SPACE     &trans        &trans    &trans          &trans          &msc SCRL_LEFT  &msc SCRL_RIGHT
+&kp TAB        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_1  &kp J     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 8          &m1
+&trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mkp MB2  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT        &kp RIGHT_GUI  &kp ENTER
+&trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp M         &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans         &mkp MB1
+&mt RSHFT RET                &kp LEFT_ALT  &kp SPACE     &trans        &trans    &trans          &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
@@ -202,7 +237,7 @@
 &trans     &kp F1  &kp F2    &kp F3     &kp F10  &kp PAGE_UP  &kp PAGE_DOWN  &m2                     &m3                         &kp LS(DEL)            &kp RIGHT_GUI  &kp PRINTSCREEN
 &trans     &kp F4  &kp F5    &kp F6     &kp F11  &kp HOME     &kp LS(HOME)   &kp LALT                &kp RCTRL                   &kp RGUI               &kp RALT       &kp ENTER
 &kp LSHFT  &kp F7  &kp F8    &kp F9     &kp F12  &kp END      &kp LS(END)    &kp LG(LS(LEFT_ARROW))  &kp LC(LA(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))  &kp DEL        &kp RSHFT
-&trans             &kp LALT  &kp LCTRL  &trans   &trans       &trans         &trans                  &m5                         &m4
+&trans             &kp LALT  &kp LCTRL  &trans   &trans       &trans         &m5                     &trans                      &m4
             >;
 
             label = "layer_3";
