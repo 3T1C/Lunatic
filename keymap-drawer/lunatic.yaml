@@ -42,10 +42,10 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - layer_1
   - $$mdi:apple-keyboard-shift$$
+  - RIGHT GUI
   - $$mdi:keyboard-space$$
   - layer_2
   - $$mdi:apple-keyboard-option$$
-  - RMETA
   layer_1:
   - $$mdi:keyboard-esc$$
   - {t: '`', s: '~'}
@@ -88,9 +88,9 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {type: held}
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   layer_2:
   - $$mdi:keyboard-tab$$
@@ -135,8 +135,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - $$mdi:pan-left$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:pan-left$$', type: held}
   - $$mdi:pan-right$$
   layer_3:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,10 +179,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {type: held}
-  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - '&m5'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&m5', type: held}
   - '&m4'
   layer_4:
   - {t: Main, h: toggle}
@@ -364,10 +364,10 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
+  - {t: '-', s: _}
   - $$mdi:keyboard-space$$
   - {t: /, s: '?'}
   - +
-  - {t: '-', s: _}
   '8':
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
