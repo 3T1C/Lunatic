@@ -142,10 +142,10 @@
         Main {
             display-name = "Main";
             bindings = <
-&kp TAB        &kp Q    &kp W         &kp E      &kp R  &kp T           &kp Y      &kp U  &kp I         &kp O       &kp P      &to 4
-&kp BACKSPACE  &kp A    &kp S         &kp D      &kp F  &kp G           &kp H      &kp J  &kp K         &kp L       &kp SEMI   &kp ENTER
-&sk LSHFT      &lt 7 Z  &kp X         &kp C      &kp V  &kp B           &kp N      &kp M  &kp COMMA     &kp PERIOD  &kp RCTRL  &sk RSHIFT
-&mt RSHFT RET           &kp LEFT_ALT  &kp LCTRL  &mo 1  &kp LEFT_SHIFT  &kp SPACE  &mo 2  &kp LEFT_ALT  &kp RMETA
+&kp TAB        &kp Q    &kp W         &kp E      &kp R  &kp T           &kp Y          &kp U      &kp I      &kp O         &kp P      &to 4
+&kp BACKSPACE  &kp A    &kp S         &kp D      &kp F  &kp G           &kp H          &kp J      &kp K      &kp L         &kp SEMI   &kp ENTER
+&sk LSHFT      &lt 7 Z  &kp X         &kp C      &kp V  &kp B           &kp N          &kp M      &kp COMMA  &kp PERIOD    &kp RCTRL  &sk RSHIFT
+&mt RSHFT RET           &kp LEFT_ALT  &kp LCTRL  &mo 1  &kp LEFT_SHIFT  &kp RIGHT_GUI  &kp SPACE  &mo 2      &kp LEFT_ALT
             >;
 
             //sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
@@ -159,7 +159,7 @@
 &kp ESC        &kp GRAVE        &kp TILDE     &kp PLUS       &kp EQUAL     &sk LC(LS(T))     &sk LS(LA(Y))      &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_GUI
 &kp BACKSPACE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS       &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ENTER
 &kp LSHFT      &kp PERCENT      &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp QUESTION      &kp COLON          &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp PIPE              &kp SLASH              &kp NON_US_BACKSLASH
-&mt RSHFT RET                   &kp LEFT_ALT  &kp LCTRL      &trans        &kp LCTRL         &kp SPACE          &trans          &kp RIGHT_ALT      &kp RCTRL
+&mt RSHFT RET                   &kp LEFT_ALT  &kp LCTRL      &trans        &kp LCTRL         &kp RCTRL          &kp SPACE       &trans             &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
@@ -182,7 +182,7 @@
 &trans     &kp F1  &kp F2    &kp F3     &kp F10  &kp PAGE_UP  &kp PAGE_DOWN  &m2                     &m3                         &kp LS(DEL)            &kp RIGHT_GUI  &kp PRINTSCREEN
 &trans     &kp F4  &kp F5    &kp F6     &kp F11  &kp HOME     &kp LS(HOME)   &kp LALT                &kp RCTRL                   &kp RGUI               &kp RALT       &kp ENTER
 &kp LSHFT  &kp F7  &kp F8    &kp F9     &kp F12  &kp END      &kp LS(END)    &kp LG(LS(LEFT_ARROW))  &kp LC(LA(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))  &kp DEL        &kp RSHFT
-&trans             &kp LALT  &kp LCTRL  &trans   &kp LCTRL    &trans         &trans                  &m5                         &m4
+&trans             &kp LALT  &kp LCTRL  &trans   &trans       &trans         &trans                  &m5                         &m4
             >;
 
             label = "layer_3";
@@ -222,7 +222,7 @@
 &to 0   &bt BT_SEL 0  &bt BT_SEL 1  &kp K_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp BACKSPACE
 &trans  &none         &sk LCTRL     &sk RIGHT_ALT      &sk LEFT_SHIFT   &sk LEFT_GUI          &kp PLUS              &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp ENTER
 &trans  &trans        &none         &none              &none            &kp ASTERISK          &kp MINUS             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp COMMA
-&trans                &kp LEFT_ALT  &kp LCTRL          &kp LEFT_GUI     &kp LEFT_SHIFT        &kp SPACE             &kp SLASH     &kp PLUS      &kp MINUS
+&trans                &kp LEFT_ALT  &kp LCTRL          &kp LEFT_GUI     &kp LEFT_SHIFT        &kp MINUS             &kp SPACE     &kp SLASH     &kp PLUS
             >;
         };
 
