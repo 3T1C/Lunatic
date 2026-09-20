@@ -6,7 +6,7 @@
 // scroll
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 900
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 600
 
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -35,9 +35,8 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    trigger-period-ms = <80>;
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <40>;       // 300
+    time-to-max-speed-ms = <100>;       // 300
     delay-ms = <0>;                   // 0
 };
 
