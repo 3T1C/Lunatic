@@ -273,10 +273,10 @@
 
         layer_7 {
             bindings = <
-&to 0   &bt BT_SEL 0    &bt BT_SEL 1  &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp BACKSPACE
-&trans  &bt BT_CLR_ALL  &sk LCTRL     &sk RIGHT_ALT  &sk LEFT_SHIFT   &sk LEFT_GUI          &kp PLUS              &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp ENTER
-&trans  &trans          &none         &none          &none            &kp ASTERISK          &kp MINUS             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp COMMA
-&trans                  &kp LEFT_ALT  &kp LCTRL      &kp LEFT_GUI     &kp LEFT_SHIFT        &kp MINUS             &kp SPACE     &kp SLASH     &kp PLUS
+&to 0   &bt BT_SEL 0  &bt BT_SEL 1  &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp BACKSPACE
+&trans  &none         &sk LCTRL     &sk RIGHT_ALT  &sk LEFT_SHIFT   &sk LEFT_GUI          &kp PLUS              &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp ENTER
+&trans  &trans        &none         &none          &none            &kp ASTERISK          &kp MINUS             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp COMMA
+&trans                &kp LEFT_ALT  &kp LCTRL      &kp LEFT_GUI     &kp LEFT_SHIFT        &kp MINUS             &kp SPACE     &kp SLASH     &kp PLUS
             >;
         };
 
