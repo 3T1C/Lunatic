@@ -283,9 +283,21 @@
         layer_8 {
             bindings = <
 &kp TAB         &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans  &to 0
-&mo 3           &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&mo 9           &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans  &kp END
 &trans                  &trans  &kp SPACE  &mo 2   &kp RCTRL  &trans  &trans  &trans  &trans
+            >;
+
+            label = "layer_8";
+        };
+
+        layer_9 {
+            label = "layer_9";
+            bindings = <
+&trans     &kp F1  &kp F2    &kp F3     &kp F10  &kp PAGE_UP  &kp PAGE_DOWN  &m2                     &m3                         &kp LS(DEL)            &kp RIGHT_GUI  &kp PRINTSCREEN
+&trans     &kp F4  &kp F5    &kp F6     &kp F11  &kp HOME     &kp LS(HOME)   &kp LALT                &kp RCTRL                   &kp RGUI               &kp RALT       &kp ENTER
+&kp LSHFT  &kp F7  &kp F8    &kp F9     &kp F12  &kp END      &kp LS(END)    &kp LG(LS(LEFT_ARROW))  &kp LC(LA(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT)))  &kp DEL        &kp RSHFT
+&trans             &kp LALT  &kp LCTRL  &trans   &trans       &trans         &m5                     &trans                      &m4
             >;
         };
     };
